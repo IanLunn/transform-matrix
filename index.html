@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<button id="next">Next</button>
+
+	<div id="container">
+		<div id="canvas">
+			<div class="step" id="step1">Step 1</div>
+			<div class="step" id="step2">Step 2</div>
+		</div>
+	</div>
+
+	<script src="js/modernizr.js"></script>
+	<script src="js/sylvester.js"></script>
+	<script src="js/transformMatrix.js"></script>
+	<script>
+		var element = document.getElementById("canvas");
+		transformMatrix(Modernizr, element);
+	</script>
+
+</body>
+</html>
